@@ -5,12 +5,12 @@ on:
 
 jobs:
   productive-box:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@master
-    - name: Update productive-box
-      uses: maxam2017/productive-box@master
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        GIST_ID: ...
-        TIMEZONE: Asia/Seoul
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Update productive-box
+        uses: maxam2017/productive-box@master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: ...
+          TIMEZONE: Asia/Seoul
