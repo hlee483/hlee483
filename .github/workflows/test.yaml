@@ -2,7 +2,7 @@ name: Update pinned-gist
 on:
   schedule:
     - cron: "0 0 * * *"
-
+    
 jobs:
   productive-box:
     runs-on: ubuntu-latest
